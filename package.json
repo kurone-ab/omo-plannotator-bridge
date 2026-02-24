@@ -3,11 +3,12 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
-  "dependencies": {
-    "@opencode-ai/plugin": "^1.2.10",
-    "@opencode-ai/sdk": "^1.2.10"
+  "scripts": {
+    "format:fix": "prettier --write *.ts"
   },
   "devDependencies": {
+    "@opencode-ai/plugin": "^1.2.10",
+    "@opencode-ai/sdk": "^1.2.10",
     "@types/bun": "latest",
     "prettier": "^3.8.1"
   },
