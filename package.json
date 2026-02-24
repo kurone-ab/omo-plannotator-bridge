@@ -1,0 +1,17 @@
+{
+  "name": "omo-plannotator-bridge",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@opencode-ai/plugin": "^1.2.10",
+    "@opencode-ai/sdk": "^1.2.10"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prettier": "^3.8.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
