@@ -1,8 +1,11 @@
 {
   "name": "omo-plannotator-bridge",
-  "module": "index.ts",
-  "type": "module",
-  "private": true,
+  "version": "0.1.0",
+  "main": "index.ts",
+  "files": ["index.ts"],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "format:fix": "prettier --write *.ts"
   },
