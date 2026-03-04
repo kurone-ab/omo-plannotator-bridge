@@ -20,10 +20,11 @@ const getUserAgent = async (
     ?.info.agent.toLowerCase();
 };
 
+const REPLACE_TEXT = "Approve";
 const interceptPlannotatorApprove = (parts: Part[]): Part[] =>
   parts.map((part) => {
     if (part.type === "text" && part.text === "Proceed with implementation") {
-      return { ...part, text: "" };
+      return { ...part, text: REPLACE_TEXT };
     }
     return part;
   });
